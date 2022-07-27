@@ -37,3 +37,10 @@ border: 1px solid red;
 margin-top: 30px; 
 text-align: right; 
 `
+export const ChartWrapper = styled.div`
+border: 1px solid crimson;
+height: 270px;
+width: 540px;
+margin:auto;
+margin-top:160px;
+`

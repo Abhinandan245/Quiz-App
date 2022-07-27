@@ -3,7 +3,7 @@ const initialState = {
     items: [],
     loading: true,
     error: null,
-    second: 15,
+    second: 25,
     text: "",
     desc: [],
     index: 0,
@@ -24,7 +24,6 @@ export default function fetchReducer(state = initialState, action) {
                 loading: false,
                 items: action.payload
             };
-
         case FETCH_PRODUCTS_FAILURE:
             return {
                 ...state,
@@ -46,7 +45,7 @@ export default function fetchReducer(state = initialState, action) {
             }
         case "onNext":
             return {
-                ...state, second: 10, index: state.index + 1
+                ...state, second: 25, index: state.index + 1
             };
         case "radioChange":
             return {

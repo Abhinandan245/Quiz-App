@@ -30,7 +30,6 @@ export let Multiple = () => {
             }
             else if (item.category == "check") {
                 if (item.question == question1) {
-                    console.log(item.question)
                     return {
                         ...item, options: item.options.map((item) => {
                             if (item.op == e.target.value) {
